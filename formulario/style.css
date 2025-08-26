@@ -1,0 +1,96 @@
+:root{
+    --lilas: rgb(103,130,189)
+}
+
+html{
+    background-color: var(--lilas);
+    color: #434b5c;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+form{
+    /* ?background-color: white; */
+    width: 90%;
+    min-width: 25em;
+    max-width: 35em;
+    /* ?box-shadow: -5px 0 rgba(13, 28, 94, 0.37); -> forma basica */
+    background-image: linear-gradient(to right, rgba(0, 0, 0, .3) .5em, white .5em); /*?segunda forma*/
+}
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 2.2em;
+    border: none;
+}
+
+legend{
+    color: var(--lilas);
+    font-weight: 300;
+    font-size: 2.5em;
+    margin-bottom: .4em;
+    padding-top: .8em;
+}
+
+p{
+    font-size: .88em;
+}
+
+section{
+    display: flex;
+    margin-top: 1em;
+    align-items: center;
+    justify-content: space-between;
+}
+
+input{
+    border: none;
+    border-bottom: 2px solid var(--lilas);
+    padding: .6em 0;
+    transition: padding .2s ease;
+    outline: none;
+}
+
+label{
+    margin: 0.9em 0 .3em;
+}
+
+label,.btn, .btn2{
+    text-transform: uppercase;
+    font-size: .9em;
+}
+
+.btn{
+    background-color: var(--lilas);
+    color: white;
+    border: none;
+    padding: .6em 1em;
+    border-radius: 3px;
+    font-weight: 530;
+}
+
+.btn2{
+    color: var(--lilas);
+    text-decoration: none;
+    font-weight: 600;
+    padding: .5em .8em;
+}
+
+input:focus{
+    padding-left: .5em;
+    outline: 2px solid var(--lilas);
+    border-bottom-color: transparent;
+}
+
+.link{
+    color: inherit;
+}
